@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aqua;
+}
+h1{
+    color: blueviolet;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+.tbl,.mth{
+    border: 2px;
+    text-align: center;
+    padding: 2px;
+    border-collapse:seperate;
+    border: solid black;
+
+}
+.tbl
+{
+    width: 100%;
+    
+}
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
