@@ -1,0 +1,273 @@
+*
+{
+    margin: 0;
+    padding: 0;
+   
+    
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.grid-container{
+     display: grid;
+     width: 100%;
+     height: 1000px;
+    grid-template-areas:
+    "grid1 grid1 grid1 grid1 grid1 grid1 grid1 grid1 grid1"
+    "grid1 grid1 grid1 grid1 grid1 grid1 grid1 grid1 grid1"
+    "grid1 grid1 grid1 grid1 grid1 grid1 grid1 grid1 grid1"
+    "grid2 grid2 grid2 grid3 grid3 grid3 grid3 grid3 grid3"
+    "grid2 grid2 grid2 grid3 grid3 grid3 grid3 grid3 grid3"
+    "grid4 grid4 grid4 grid4 grid4 grid4 grid5 grid5 grid5"
+    "grid4 grid4 grid4 grid4 grid4 grid4 grid5 grid5 grid5"
+    "grid6 grid6 grid6 grid7 grid7 grid7 grid5 grid5 grid5"
+    "grid6 grid6 grid6 grid7 grid7 grid7 grid5 grid5 grid5"
+    "grid8 grid8 grid8 grid8 grid8 grid9 grid9 grid9 grid9"
+    "grid8 grid8 grid8 grid8 grid8 grid9 grid9 grid9 grid9";
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    gap: 2px;
+   }
+
+.grid1
+{
+    grid-area: grid1;
+    position: relative;
+}
+.over
+{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.591);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    transition: 0.5s;
+    opacity: 0;
+}
+.over:hover{
+    opacity: 1;
+}
+.over p{
+    background-color: aliceblue;
+    
+    border: 1px solid white;
+    width: 100px;
+    margin: 10px;
+    
+}
+.over i
+{
+    margin: 10px;
+}
+.grid2
+{
+    grid-area: grid2;
+    position: relative;
+}
+.over2{
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width:100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+.over2:hover{
+    opacity: 1;
+}
+.over2 p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    font-size: 12px;
+}
+.over2 span{
+    padding: 10px;
+    
+}
+.grid3
+{
+    grid-area: grid3;
+    position: relative;
+}
+.over3{
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.over3:hover{
+    opacity: 1;
+}
+.entire{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    
+}
+.top p{
+    margin-bottom: 0;
+}
+.down p{
+    border: 1px solid white;
+    width: 100px;
+    background-color: aliceblue;
+    border-color: black;
+    margin-top: 0;
+    
+}
+.grid4
+{
+    grid-area: grid4;
+    position: relative;
+}
+.over4{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+      align-items: end;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;   
+}
+.over4 p{
+    margin-bottom: 0;
+    font-size: 30px;
+    padding-right: 10px;
+}
+.over4:hover{
+    opacity: 1;
+}
+.grid5
+{
+    grid-area: grid5;
+    position: relative;
+}
+.over5{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+
+    
+}
+.over5 p{
+    border: 1px solid white;
+    width: 100px;
+    background-color: aliceblue;
+    color: black;
+    margin-top: 0;
+    padding: 2px;
+    border-color: black;
+    
+}
+.over5:hover{
+    opacity: 1;
+}
+.grid6
+{
+    grid-area: grid6;
+    position: relative;
+}
+.over6{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+.over6 p{
+    margin-bottom: 0;
+}
+.over6:hover{
+    opacity: 1;
+}
+.grid7
+{
+    grid-area: grid7;
+    position: relative;
+}
+.over7{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+.over7:hover
+{
+    opacity: 1;
+}
+
+.grid8
+{
+    grid-area: grid8;
+    position: relative;
+}
+.over8{
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: violet;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+.over8:hover{
+    opacity: 1;
+}
+.over8 p{
+    margin-bottom: 0;
+    font-size: 30px;
+    
+}
+.grid9
+{
+    grid-area: grid9;
+    position: relative;
+}
+.over9{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+.over9:hover{
+    opacity: 1;
+}
+.over9 p{
+    align-items: center;
+}
